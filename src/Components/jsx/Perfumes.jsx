@@ -1,11 +1,12 @@
 import React from "react";
 import { Perfumess } from "../../content/Perfumes";
+import '../css/Perfumes.css'
 
 export default function Perfumes() {
   return (
-    <div>
+    <div className="perfumes-content">
       {Perfumess.map((p) => (
-        <div key={p.id}>
+        <div className="perfumes-content__box" key={p.id}>
           <p>{p.title}</p>
           <p>{p.id}</p>
         </div>
