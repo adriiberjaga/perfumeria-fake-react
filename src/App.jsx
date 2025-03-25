@@ -8,9 +8,8 @@ function App() {
     <>
     <Header />
     <main>
-    <h1>Hello</h1>
+      <h1>Hello</h1>
       <Outlet />
-      
     </main>
     </>
 
