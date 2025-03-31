@@ -8,8 +8,8 @@ export default function Perfumes() {
       {Perfumess.map((p) => (
         <div className="perfumes-content__box" key={p.id}>
           <img src={p.img} alt="" />
-          <p>{p.title}</p>
-          <div>{p.price} $</div>
+          <p className="overlay foto-title">{p.title}</p>
+          <div className="overlay">{p.price} $</div>
         </div>
       ))}
     </div>
