@@ -34,4 +34,25 @@ export const Perfumess = [
         img: perfume5,
         price: 34
     },
+    {
+        title: 'titulo 4',
+        id: crypto.randomUUID(),
+        desc: 'descripcion',
+        img: perfume5,
+        price: 34
+    },
+    {
+        title: 'titulo 4',
+        id: crypto.randomUUID(),
+        desc: 'descripcion',
+        img: perfume5,
+        price: 34
+    },
+    {
+        title: 'titulo 4',
+        id: crypto.randomUUID(),
+        desc: 'descripcion',
+        img: perfume5,
+        price: 34
+    },
 ]
