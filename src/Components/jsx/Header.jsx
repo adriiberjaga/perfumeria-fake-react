@@ -16,6 +16,7 @@ export default function Header() {
         </button>
 
         <nav className={`header-nav ${isMenuOpen ? "open" : ""}`}>
+          {isMenuOpen ? <button className="button-cerrar" onClick={() => setIsMenuOpen(!isMenuOpen)}>x</button> : ''}
           <NavLink
             to=""
             className={({ isActive }) => (isActive ? "active" : "")}

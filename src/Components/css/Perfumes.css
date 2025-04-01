@@ -1,14 +1,21 @@
 .perfumes-content{
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 0 0.8rem;
-    align-items: center;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    
 }
 .perfumes-content__box{
     margin: 40px;
-    position: relative;
     border: 2px solid black;
+    position: relative;
+  
+    width: 200px;
+    height: 300px;
+  
+  
     overflow: hidden;
 
 }
@@ -42,13 +49,19 @@
   
     translate: 0 100px;
     transition: translate 0.5s ease;
+
+    text-align: end;
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5%;
   }
   
   
-.perfumes-content__box:hover > .overlay {
+  .perfumes-content__box:hover > .overlay {
     opacity: 1;
   }
   
-.perfumes-content__box:hover > .foto-title {
+  .perfumes-content__box:hover > .foto-title {
     translate: 0;
   }
