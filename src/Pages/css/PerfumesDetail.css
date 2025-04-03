@@ -1,0 +1,35 @@
+.perfume-detail{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 4rem;
+    margin-top: 3rem;
+}
+.perfume-detail-div{
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    gap: 100px;
+    padding: 2rem 4rem;
+
+}
+.perfume-detail__image {
+    display: flex;
+    gap: 30px;
+}
+.perfume-detail__image img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.perfume-detail__info{
+    display: flex;
+    flex-direction: column;
+   justify-content: end;
+}
+
+.link{
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}

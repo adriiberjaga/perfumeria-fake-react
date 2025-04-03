@@ -6,6 +6,7 @@
   gap: 2rem;
   justify-content: center;
   margin: 0 auto;
+  gap: 100px;
 }
 
 .perfumes-content__box {
@@ -43,7 +44,7 @@
   opacity: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(76, 0, 130, 0.8), rgba(76, 0, 130, 0.4));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
   position: absolute;
   top: 0;
   left: 0;
@@ -54,7 +55,7 @@
 }
 
 .foto-title {
-  background-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -66,9 +67,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 1.4;
+
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #222; /* Un tono gris oscuro más elegante */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .perfumes-content__box:hover > .overlay {
   opacity: 1;
