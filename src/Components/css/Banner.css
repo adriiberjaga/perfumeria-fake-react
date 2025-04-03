@@ -1,6 +1,97 @@
-.div-banner{
-    display: flex;
-    justify-content: center;
+/* Contenedor principal */
+.container {
+    position: relative;
     width: 100%;
     height: 100vh;
-}
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Video de fondo */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  /* Capa de oscurecimiento */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Contenido centrado */
+  .content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Título */
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtítulo */
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón */
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Animación de fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+    }
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

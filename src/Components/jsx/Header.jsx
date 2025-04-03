@@ -24,7 +24,7 @@ export default function Header() {
             Inicio
           </NavLink>
           <NavLink
-            to="/per"
+            to="perfume/1"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Perfume
