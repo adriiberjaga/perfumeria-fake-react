@@ -33,3 +33,9 @@
     top: 130px;
     left: 30px;
 }
+@media (max-width: 768px) {
+    .perfume-detail {
+      padding-top: 120px; 
+    }
+  }
+  

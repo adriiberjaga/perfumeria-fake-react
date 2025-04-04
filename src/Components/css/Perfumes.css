@@ -14,13 +14,17 @@
   border: 1px solid #e1e1e1;
   border-radius: 8px;
   position: relative;
-  width: 100%;
+  width: 230px;
   height: 350px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.navlink {
+  display: flex;
+  justify-content: center;
+}
 .perfumes-content__box:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -87,33 +91,37 @@
   transform: translateY(0);
 }
 
-/* Responsive adjustments with improved breakpoints */
+/* PERFUMES CONTENT – Responsive Grid Layout */
+
+/* Desktop & Large tablets (795px - 1100px) */
 @media (min-width: 795px) and (max-width: 1100px) {
   .perfumes-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Small tablets (769px - 794px) */
 @media (min-width: 769px) and (max-width: 794px) {
   .perfumes-content {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 85%; /* Slightly wider container at this specific breakpoint */
   }
 }
 
+/* Tablets and small screens (up to 768px) */
 @media (max-width: 768px) {
   .perfumes-content {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
     gap: 1.5rem;
     max-width: 90%;
+    margin: 0 auto;
   }
-  
   .perfumes-content__box {
-    height: 300px;
+    width: 200px;
   }
 }
 
+/* Mobile phones (up to 600px) */
 @media (max-width: 600px) {
   .perfumes-content {
     grid-template-columns: 1fr;
