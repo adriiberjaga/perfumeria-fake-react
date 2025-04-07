@@ -12,14 +12,10 @@ export default function PerfumeDetail() {
   return (
     <div className="perfume-detail">
       <div className="perfume-detail-div">
-      <div className="perfume-detail__image">
         <img src={perfume.img} alt={perfume.title} />
         <h4>{perfume.title}</h4>
-
-      </div>
-      <div className="perfume-detail__info">
         <p>{perfume.price} $</p>
-      </div>
+        <button>Añadir a la cesta</button>
       </div>
       <Link className="link" to="/">Volver atras</Link>
     </div>

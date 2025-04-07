@@ -38,21 +38,21 @@ export const Perfumess = [
         title: 'titulo 4',
         id: 5,
         desc: 'descripcion',
-        img: perfume5,
+        img: perfume4,
         price: 34
     },
     {
         title: 'titulo 4',
         id: 6,
         desc: 'descripcion',
-        img: perfume5,
+        img: perfume6,
         price: 34
     },
     {
         title: 'titulo 4',
         id: 7,
         desc: 'descripcion',
-        img: perfume5,
+        img: perfume2,
         price: 34
     },
 ]

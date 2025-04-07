@@ -1,0 +1,131 @@
+.inicio-content {
+    max-width: 75%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 100px;
+  }
+  
+  .inicio-content__box {
+    margin: 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    position: relative;
+    width: 230px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .inicio-navlink {
+    display: flex;
+    justify-content: center;
+  }
+  .inicio-content__box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .inicio-content__box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    max-width: 100%; /* Ensures image doesn't overflow */
+    aspect-ratio: 2/3;
+  
+  }
+  
+  .inicio-content__box:hover img {
+    transform: scale(1.05);
+  }
+  
+  .inicio-overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .inicio-foto-title {
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 5;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 1.4;
+  
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #cecece; /* Un tono gris oscuro más elegante */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .inicio-content__box:hover > .inicio-overlay {
+    opacity: 1;
+  }
+  
+  .inicio-content__box:hover > .inicio-foto-title {
+    transform: translateY(0);
+  }
+  
+  /* PERFUMES CONTENT – Responsive Grid Layout */
+  
+  /* Desktop & Large tablets (795px - 1100px) */
+  @media (min-width: 795px) and (max-width: 1100px) {
+    .inicio-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Small tablets (769px - 794px) */
+  @media (min-width: 769px) and (max-width: 794px) {
+    .inicio-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Tablets and small screens (up to 768px) */
+  @media (max-width: 768px) {
+    .inicio-content {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1rem;
+      gap: 1.5rem;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .inicio-content__box {
+      width: 200px;
+    }
+  }
+  
+  /* Mobile phones (up to 600px) */
+  @media (max-width: 600px) {
+    .inicio-content {
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+  }
+  

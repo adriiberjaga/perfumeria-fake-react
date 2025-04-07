@@ -18,28 +18,28 @@ export default function Header() {
         <nav className={`header-nav ${isMenuOpen ? "open" : ""}`}>
           {isMenuOpen ? <button className="button-cerrar" onClick={() => setIsMenuOpen(!isMenuOpen)}>x</button> : ''}
           <NavLink 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen(false)}
             to=""
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Inicio
           </NavLink>
           <NavLink 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            to="perfume/1"
+            onClick={() => setIsMenuOpen(false)}
+            to="perfumes"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Perfume
           </NavLink>
           <NavLink 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen(false)}
             to="/maquillaje"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Maquillaje
           </NavLink>
           <NavLink 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen(false)}
             to="/cabello"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
