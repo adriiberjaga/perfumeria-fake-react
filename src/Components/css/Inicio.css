@@ -59,7 +59,7 @@
   }
   
   .inicio-foto-title {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(233, 233, 233, 0.95);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -78,7 +78,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 1.6rem;
-    color: #cecece; /* Un tono gris oscuro más elegante */
+    color: #000000; /* Un tono gris oscuro más elegante */
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
   }
   

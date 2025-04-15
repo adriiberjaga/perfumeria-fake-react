@@ -45,6 +45,13 @@ export default function Header() {
           >
             Cabello
           </NavLink>
+          <NavLink 
+            onClick={() => setIsMenuOpen(false)}
+            to="/cart"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Carrito de compras
+          </NavLink>
         </nav>
     </header>
   );
