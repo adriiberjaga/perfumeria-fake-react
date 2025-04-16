@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "../css/Header.css"; // Importamos los estilos
+import "../css/Header.css"; 
+import cart from '../../images/image-cart.png'
+import { useCart } from "../../context/CartContext";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const { itemsNumber } = useCart()
   return (
     <header className="header">
         <h2 className="header-logo">Mi tienda</h2>
@@ -50,7 +52,10 @@ export default function Header() {
             to="/cart"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Carrito de compras
+            <div className="box-cart">
+            <span className="number-cart">{itemsNumber}</span>
+              <img className="icon-cart" src={cart} alt="Carrito" />
+            </div>
           </NavLink>
         </nav>
     </header>
