@@ -9,7 +9,7 @@ export const Inicioo = [
         id: 1,
         title: 'Titulo 1',
         img: perfume1,
-                price: 34
+        price: 34,
 
     },
     {
