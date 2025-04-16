@@ -6,6 +6,8 @@ export const Maquillajee = [
     {
         id: 1,
         title: 'Maquillaje 1',
-        img: maquillaje1
+        img: maquillaje1,
+        price: 34
+
     },
 ]

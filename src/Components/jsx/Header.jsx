@@ -33,7 +33,7 @@ export default function Header() {
           >
             Perfume
           </NavLink>
-          <NavLink 
+          {/* <NavLink 
             onClick={() => setIsMenuOpen(false)}
             to="/maquillaje"
             className={({ isActive }) => (isActive ? "active" : "")}
@@ -46,14 +46,18 @@ export default function Header() {
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Cabello
-          </NavLink>
+          </NavLink> */}
           <NavLink 
             onClick={() => setIsMenuOpen(false)}
             to="/cart"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             <div className="box-cart">
-            <span className="number-cart">{itemsNumber}</span>
+              { itemsNumber === 0 ? (
+                <span></span>
+              ) : (
+                <span className="number-cart">{itemsNumber}</span>
+              )}
               <img className="icon-cart" src={cart} alt="Carrito" />
             </div>
           </NavLink>

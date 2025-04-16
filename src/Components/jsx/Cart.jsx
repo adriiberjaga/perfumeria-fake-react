@@ -7,7 +7,9 @@ export default function Cart() {
     <div>
         {cartItems.map((p, index) =>(
           <div key={index}>
-            <p>{p.title}</p>
+            <img src={p.img} alt="" />
+            <h3>{p.title}</h3>
+            <p>{p.desc} - {p.price}$</p>
           </div>
         ))}
     </div>
