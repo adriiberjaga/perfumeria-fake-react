@@ -57,4 +57,9 @@
   .cart-buttons button:hover {
     background-color: #0f5bdc;
   }
+  .cart-total {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
   
